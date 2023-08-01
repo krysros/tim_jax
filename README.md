@@ -4,7 +4,7 @@ Solution of Simply Supported Rectangular Plates under Sinusoidal Load using Auto
 
 ## Theory
 
-See ch. 5, p. 105 of [Theory of Plates and Shells](Theory_of_Plates_and_Shells.bib) by S. Timoshenko and S. Woinowsky-Krieger.
+See ch. 5, p. 105 of [Theory of Plates and Shells](book.bib) by S. Timoshenko and S. Woinowsky-Krieger.
 
 ## Installation
 
