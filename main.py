@@ -10,14 +10,14 @@ from const import a, b
 from core import w, phi_x, phi_y, M_x, M_y, M_xy, Q_x, Q_y, V_x, V_y
 
 
-def plot_results(X, Y, Z, title):
+def plot(X, Y, Z, title):
     fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
     ax.set_xlabel("x")
     ax.set_ylabel("y")
     ax.set_zlabel("z")
     surf = ax.plot_surface(X, Y, Z, cmap=cm.coolwarm, linewidth=0)
     ax.set_zlim(ax.get_zlim()[::-1])
-    boundaries = linspace(min(Z), max(Z), N)
+    boundaries = linspace(min(Z), max(Z), N, endpoint=True)
     fig.colorbar(surf, shrink=0.75, boundaries=boundaries, pad=0.1)
     plt.title(f"3D plot of ${title}$")
     fname = title.strip("\\").replace("{", "").replace("}", "")
@@ -51,4 +51,4 @@ if __name__ == '__main__':
         print("Mid 1:", Z[M, 0])
         print("Mid 2:", Z[0, M])
         print(5 * "-")
-        plot_results(X, Y, Z, title=i)
+        plot(X, Y, Z, title=i)
