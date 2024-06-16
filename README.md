@@ -12,20 +12,6 @@ See ch. 5, p. 105 of [Theory of Plates and Shells](book.bib) by S. Timoshenko an
 python -m pip install -r requirements.txt
 ```
 
-## Setup (optional)
-
-```bash
-export JAX_ENABLE_X64=True
-export JAX_PLATFORM_NAME=cpu
-```
-
-or
-
-```powershell
-$env:JAX_ENABLE_X64 = "True"
-$env:JAX_PLATFORM_NAME = "cpu"
-```
-
 ## Tests
 
 ```console

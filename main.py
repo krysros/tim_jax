@@ -1,6 +1,7 @@
-# from jax.config import config
-# config.update("jax_enable_x64", True)
-# config.update("jax_platform_name", "cpu")
+import jax
+
+jax.config.update("jax_enable_x64", True)
+
 
 import matplotlib.pyplot as plt
 from jax.numpy import min, max, linspace, meshgrid
@@ -25,7 +26,7 @@ def plot(X, Y, Z, title):
     plt.savefig(f"tim_{fname}.pdf", bbox_inches="tight")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     N = 25
     M = int(0.5 * (N - N % 2))
